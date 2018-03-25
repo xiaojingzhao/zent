@@ -1,9 +1,6 @@
 import React from 'react';
-import Enzyme, { mount } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import Menu from 'menu';
 
-Enzyme.configure({ adapter: new Adapter() });
+import Menu from 'menu';
 
 const { MenuItem, SubMenu } = Menu;
 

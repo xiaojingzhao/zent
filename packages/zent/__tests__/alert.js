@@ -1,9 +1,6 @@
 import React from 'react';
-import Enzyme, { mount } from 'enzyme';
-import Alert from 'alert';
-import Adapter from 'enzyme-adapter-react-16';
 
-Enzyme.configure({ adapter: new Adapter() });
+import Alert from 'alert';
 
 describe('Alert', () => {
   it('style defaults to info', () => {

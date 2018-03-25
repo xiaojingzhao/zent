@@ -1,9 +1,6 @@
 import React from 'react';
-import Enzyme, { mount } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import SearchInput from 'search-input';
 
-Enzyme.configure({ adapter: new Adapter() });
+import SearchInput from 'search-input';
 
 describe('SearchInput', () => {
   it('supports onChange and clear, retains focus when click on clear button', () => {

@@ -1,9 +1,6 @@
 import React from 'react';
-import Enzyme, { mount } from 'enzyme';
-import Badge from 'badge';
-import Adapter from 'enzyme-adapter-react-16';
 
-Enzyme.configure({ adapter: new Adapter() });
+import Badge from 'badge';
 
 describe('Badge', () => {
   it('render a normal badge', () => {

@@ -1,11 +1,8 @@
 /* eslint-disable no-underscore-dangle */
 
 import React from 'react';
-import Enzyme, { mount } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import ZentForm from 'form';
 
-Enzyme.configure({ adapter: new Adapter() });
+import ZentForm from 'form';
 
 describe('CreateForm and FieldArray', () => {
   const { Form, createForm, Field, FieldArray, InputField } = ZentForm;

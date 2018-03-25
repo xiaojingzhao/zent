@@ -1,7 +1,13 @@
 import React from 'react';
-import { mount, ReactWrapper } from 'enzyme';
+import { ReactWrapper } from 'enzyme';
 import DateRangePicker from 'datetimepicker/DateRangePicker';
+import { Simulate } from 'react-dom/test-utils';
 import isArray from 'lodash/isArray';
+
+const simulateRawWithTimers = (node, event, ...arg) => {
+  Simulate[event](node, ...arg);
+  jest.runAllTimers();
+};
 
 describe('DateRangePicker', () => {
   it('DateRangePicker has its core function', () => {
@@ -11,9 +17,11 @@ describe('DateRangePicker', () => {
       .find('.picker-input')
       .at(0)
       .simulate('click');
-    pop = new ReactWrapper(wrapper.find('DatePicker').node.picker, true);
-    expect(pop.find('DatePanel').length).toBe(1);
+    pop = document.querySelector('.zent-popover-content');
 
+    expect(pop.querySelectorAll('.date-panel').length).toBe(1);
+
+    simulateRawWithTimers(pop.querySelectorAll('.date-panel')[0], 'click');
     pop
       .find('DatePanel')
       .at(0)
@@ -26,7 +34,7 @@ describe('DateRangePicker', () => {
       .find('.picker-input')
       .at(1)
       .simulate('click');
-    pop = new ReactWrapper(wrapper.find('DatePicker').node.picker, true);
+    pop = document.querySelector('.zent-popover-content');
     expect(pop.find('DatePanel').length).toBe(1);
 
     pop
@@ -48,7 +56,7 @@ describe('DateRangePicker', () => {
       .find('.picker-input')
       .at(0)
       .simulate('click');
-    pop = new ReactWrapper(wrapper.find('DatePicker').node.picker, true);
+    pop = document.querySelector('.zent-popover-content');
 
     expect(
       pop
@@ -69,7 +77,7 @@ describe('DateRangePicker', () => {
       .find('.picker-input')
       .at(0)
       .simulate('click');
-    pop = new ReactWrapper(wrapper.find('DatePicker').node.picker, true);
+    pop = document.querySelector('.zent-popover-content');
     pop
       .find('DatePanel')
       .at(0)
@@ -108,7 +116,7 @@ describe('DateRangePicker', () => {
       .find('.picker-input')
       .at(0)
       .simulate('click');
-    pop = new ReactWrapper(wrapper.find('DatePicker').node.picker, true);
+    pop = document.querySelector('.zent-popover-content');
     pop.find('.btn--confirm').simulate('click');
 
     wrapper
@@ -134,7 +142,7 @@ describe('DateRangePicker', () => {
       .find('.picker-input')
       .at(0)
       .simulate('click');
-    pop = new ReactWrapper(wrapper.find('DatePicker').node.picker, true);
+    pop = document.querySelector('.zent-popover-content');
     pop
       .find('DatePanel')
       .at(0)
@@ -147,7 +155,7 @@ describe('DateRangePicker', () => {
       .find('.picker-input')
       .at(1)
       .simulate('click');
-    pop = new ReactWrapper(wrapper.find('DatePicker').node.picker, true);
+    pop = document.querySelector('.zent-popover-content');
     pop
       .find('DatePanel')
       .at(0)
@@ -165,7 +173,7 @@ describe('DateRangePicker', () => {
       .find('.picker-input')
       .at(0)
       .simulate('click');
-    pop = new ReactWrapper(wrapper.find('DatePicker').node.picker, true);
+    pop = document.querySelector('.zent-popover-content');
 
     // support min and max
     pop = mount(

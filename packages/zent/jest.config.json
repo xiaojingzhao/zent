@@ -19,8 +19,7 @@
   "timers": "fake",
   "testPathIgnorePatterns": [
     "<rootDir>/__tests__/table/comp",
-    "<rootDir>/__tests__/select.js",
-    "<rootDir>/__tests__/datetimepicker"
+    "<rootDir>/__tests__/select.js"
   ],
   "coveragePathIgnorePatterns": [
     "<rootDir>/src/slider/common.js",
@@ -97,5 +96,12 @@
     "^tree(.*)$": "<rootDir>/src/tree$1",
     "^upload(.*)$": "<rootDir>/src/upload$1",
     "^utils(.*)$": "<rootDir>/src/utils$1"
+  },
+  "setupFiles": [
+    "<rootDir>/jest.setup.js"
+  ],
+  "globals": {
+    "mount": true,
+    "shallow": true
   }
 }

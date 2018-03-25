@@ -1,6 +1,5 @@
 import React from 'react';
-import Enzyme, { mount } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+
 import ColorPicker from 'colorpicker';
 import * as alpha from 'colorpicker/helpers/alpha';
 import * as hue from 'colorpicker/helpers/hue';
@@ -18,8 +17,6 @@ import {
   Saturation,
   Swatch,
 } from 'colorpicker/common';
-
-Enzyme.configure({ adapter: new Adapter() });
 
 const red = {
   hsl: { a: 1, h: 0, l: 0.5, s: 1 },

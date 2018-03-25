@@ -1,11 +1,8 @@
 import React from 'react';
-import Enzyme, { mount } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+
 import previewImage from 'preview-image';
 import Image from 'preview-image/Image';
 import previewImageFunc from 'preview-image/previewImage';
-
-Enzyme.configure({ adapter: new Adapter() });
 
 describe('previewImage render', () => {
   it('should open a portal when called', () => {

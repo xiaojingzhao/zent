@@ -1,9 +1,6 @@
 import React from 'react';
-import Enzyme, { shallow, mount } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import Radio from 'radio';
 
-Enzyme.configure({ adapter: new Adapter() });
+import Radio from 'radio';
 
 const Group = Radio.Group;
 

@@ -1,9 +1,6 @@
 import React from 'react';
-import Enzyme, { mount } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import Swiper from 'swiper';
 
-Enzyme.configure({ adapter: new Adapter() });
+import Swiper from 'swiper';
 
 describe('Swiper', () => {
   it('className default to zent-swiper ', () => {

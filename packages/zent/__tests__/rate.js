@@ -1,9 +1,6 @@
 import React from 'react';
-import Enzyme, { shallow, mount } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import Rate from 'rate';
 
-Enzyme.configure({ adapter: new Adapter() });
+import Rate from 'rate';
 
 describe('Rate', () => {
   it('can have custom wrapper classNames and prefix', () => {

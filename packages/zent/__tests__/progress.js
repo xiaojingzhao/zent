@@ -1,9 +1,6 @@
 import React from 'react';
-import Enzyme, { mount } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import Progress from 'progress';
 
-Enzyme.configure({ adapter: new Adapter() });
+import Progress from 'progress';
 
 describe('Progress', () => {
   it('render a default Progress', () => {

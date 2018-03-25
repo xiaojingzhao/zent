@@ -1,9 +1,6 @@
 import React from 'react';
-import Enzyme, { mount } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import findPositionedParent from 'utils/dom/findPositionedParent';
 
-Enzyme.configure({ adapter: new Adapter() });
+import findPositionedParent from 'utils/dom/findPositionedParent';
 
 describe('findPositionedParent', () => {
   it('a noop if element not found', () => {

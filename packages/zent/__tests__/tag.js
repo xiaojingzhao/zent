@@ -1,9 +1,6 @@
 import React from 'react';
-import Enzyme, { mount } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import Tag from 'tag';
 
-Enzyme.configure({ adapter: new Adapter() });
+import Tag from 'tag';
 
 describe('Tag', () => {
   it('render a default tag', () => {

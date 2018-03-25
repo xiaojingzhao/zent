@@ -1,9 +1,6 @@
 import React from 'react';
-import Enzyme, { mount, shallow } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import InfiniteScroller from 'infinite-scroller';
 
-Enzyme.configure({ adapter: new Adapter() });
+import InfiniteScroller from 'infinite-scroller';
 
 describe('InfiniteScroller', () => {
   it('className default to zent-infinite-scroller ', () => {

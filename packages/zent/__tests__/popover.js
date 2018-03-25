@@ -1,11 +1,8 @@
 import React from 'react';
 import { Simulate } from 'react-dom/test-utils';
-import Enzyme, { mount } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+
 import Button from 'button';
 import Popover from 'popover';
-
-Enzyme.configure({ adapter: new Adapter() });
 
 /* eslint-disable */
 const PopoverContent = Popover.Content;

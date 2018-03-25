@@ -1,9 +1,5 @@
 import Affix from 'affix';
 import React from 'react';
-import Enzyme, { mount } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-
-Enzyme.configure({ adapter: new Adapter() });
 
 describe('Affix component', () => {
   it('Affix has props', () => {

@@ -1,9 +1,6 @@
 import React from 'react';
-import Enzyme, { shallow, mount } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import Slider from 'slider';
 
-Enzyme.configure({ adapter: new Adapter() });
+import Slider from 'slider';
 
 describe('Slider', () => {
   it('will render div wrapper contains an Slider without any props', () => {

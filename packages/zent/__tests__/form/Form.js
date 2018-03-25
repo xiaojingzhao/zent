@@ -1,9 +1,6 @@
 import React from 'react';
-import Enzyme, { shallow } from 'enzyme';
-import ZentForm from 'form';
-import Adapter from 'enzyme-adapter-react-16';
 
-Enzyme.configure({ adapter: new Adapter() });
+import ZentForm from 'form';
 
 describe('Form', () => {
   const { Form } = ZentForm;

@@ -1,10 +1,7 @@
 import React from 'react';
 import { Simulate } from 'react-dom/test-utils';
-import Enzyme, { mount } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import Cascader from 'cascader';
 
-Enzyme.configure({ adapter: new Adapter() });
+import Cascader from 'cascader';
 
 const simulateWithTimers = (node, event, ...arg) => {
   node.simulate(event, ...arg);

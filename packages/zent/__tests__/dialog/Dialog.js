@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import { Simulate } from 'react-dom/test-utils';
-import Enzyme, { mount } from 'enzyme';
-import Dialog from 'dialog';
-import Adapter from 'enzyme-adapter-react-16';
 
-Enzyme.configure({ adapter: new Adapter() });
+import Dialog from 'dialog';
 
 describe('Dialog component', () => {
   let dialog;

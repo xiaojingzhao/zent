@@ -1,11 +1,8 @@
 import React from 'react';
-import Enzyme, { mount } from 'enzyme';
+
 import omit from 'lodash/omit';
 import ZentForm from 'form';
 import Option from 'select';
-import Adapter from 'enzyme-adapter-react-16';
-
-Enzyme.configure({ adapter: new Adapter() });
 
 describe('GetControlGroup and Component_Fields', () => {
   const { Form, createForm, Field, getControlGroup, unknownProps } = ZentForm;

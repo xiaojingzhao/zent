@@ -1,12 +1,9 @@
 import React from 'react';
-import Enzyme, { mount } from 'enzyme';
+
 import Table from 'table';
-import Adapter from 'enzyme-adapter-react-16';
 
 import datasets from './comp/data/conf';
 import TextComponent from './comp/components/Text';
-
-Enzyme.configure({ adapter: new Adapter() });
 
 const columns = [
   {

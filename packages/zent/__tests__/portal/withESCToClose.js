@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import Enzyme, { mount } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import Portal from 'portal';
 
-Enzyme.configure({ adapter: new Adapter() });
+import Portal from 'portal';
 
 const { withESCToClose } = Portal;
 const MyPortal = withESCToClose(Portal);

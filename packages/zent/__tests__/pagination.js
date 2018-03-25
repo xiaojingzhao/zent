@@ -1,9 +1,6 @@
 import React from 'react';
-import Enzyme, { mount } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import Pagination from 'pagination';
 
-Enzyme.configure({ adapter: new Adapter() });
+import Pagination from 'pagination';
 
 describe('Pagination', () => {
   it('Paginatio will render a default structure with some custom props', () => {

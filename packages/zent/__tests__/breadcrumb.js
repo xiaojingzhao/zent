@@ -1,9 +1,6 @@
 import React from 'react';
-import Enzyme, { mount, shallow } from 'enzyme';
-import Breadcrumb from 'breadcrumb';
-import Adapter from 'enzyme-adapter-react-16';
 
-Enzyme.configure({ adapter: new Adapter() });
+import Breadcrumb from 'breadcrumb';
 
 /**
  * 只开了一个 Section 因为这个组件结构比较简单

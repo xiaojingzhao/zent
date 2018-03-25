@@ -4,11 +4,8 @@ import React from 'react';
 import noop from 'lodash/noop';
 import omit from 'lodash/omit';
 import PropTypes from 'prop-types';
-import Enzyme, { mount } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import ZentForm from 'form';
 
-Enzyme.configure({ adapter: new Adapter() });
+import ZentForm from 'form';
 
 describe('CreateForm and Field', () => {
   const { Form, createForm, Field, InputField, unknownProps } = ZentForm;
